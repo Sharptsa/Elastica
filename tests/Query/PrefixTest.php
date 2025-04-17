@@ -22,6 +22,7 @@ class PrefixTest extends BaseTest
         $value = 'ni';
         $boost = 2;
         $query->setPrefix($key, $value, $boost);
+        $query->setRewrite(Prefix::REWRITE_SCORING_BOOLEAN);
 
         $data = $query->toArray();
 
@@ -29,5 +30,6 @@ class PrefixTest extends BaseTest
         $this->assertIsArray($data['prefix'][$key]);
         $this->assertEquals($data['prefix'][$key]['value'], $value);
         $this->assertEquals($data['prefix'][$key]['boost'], $boost);
+        $this->assertEquals($data['prefix'][$key]['rewrite'], 'scoring_boolean');
     }
 }
