@@ -8,10 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Backward Compatibility Breaks
 ### Added
-* `Elastica\Query\Fuzzy::setRewrite` rewrite param setter and possible values as constants
-* `Elastica\Query\Prefix::setRewrite` rewrite param setter and possible values as constants
-* `Elastica\Query\Regexp::setRewrite` rewrite param setter and possible values as constants
-*  all possible rewrite value as constant to `Elastica\Query\Wildcard`
+* `Elastica\Query\Fuzzy::setRewrite` rewrite param setter and possible values as constants [#2242](https://github.com/ruflin/Elastica/pull/2242)
+* `Elastica\Query\Prefix::setRewrite` rewrite param setter and possible values as constants [#2242](https://github.com/ruflin/Elastica/pull/2242)
+* `Elastica\Query\Regexp::setRewrite` rewrite param setter and possible values as constants [#2242](https://github.com/ruflin/Elastica/pull/2242)
+*  Add constants for all possible rewrite values in `Elastica\Query\Wildcard` [#2242](https://github.com/ruflin/Elastica/pull/2242)
 ### Changed
 ### Deprecated
 ### Removed
